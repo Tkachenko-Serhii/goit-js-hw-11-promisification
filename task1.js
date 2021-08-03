@@ -1,11 +1,10 @@
 //Задание 1
 const delay = (ms) => {
-  const promise = new Promise((res, rej) => {
+  return new Promise((res, rej) => {
     setTimeout(() => {
       res(ms);
     }, ms);
   });
-  return promise;
 };
 
 const logger = (time) => console.log(`Resolved after ${time}ms`);
